@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-image: linear-gradient(to top, blue, lightblue);
+  width: 450px;
+  height: auto;
+  border-radius: 20px;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input {
+  border-radius: 50px;
+  background-color: white;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+
+.search img {
+  width: 30px;
+  height: 30px;
+}
+
+.error {
+  text-align: left;
+  margin-top: 10px;
+  width: 100%;
+  color: red;
+  display: none;
+}
+
+.hidden-details {
+  width: 100%;
+  display: none;
+}
+
+.city-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.weather-icon {
+  width: 160px;
+}
+
+.temp {
+  font-size: 70px;
+  color: white;
+}
+
+.city {
+  color: white;
+  font-size: 50px;
+}
+
+.other-details {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 30px;
+  gap: 80px;
+  width: 100%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col img {
+  width: 50px;
+}
+
+.col p {
+  color: white;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+@media (max-width: 390px) {
+  .search input {
+    width: 70vw;
+    font-size: 15px;
+  }
+
+  .search img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .weather-icon {
+    width: 80px;
+  }
+
+  .col img {
+    width: 40px;
+  }
+
+  .col p {
+    font-size: 15px;
+  }
+
+  .temp {
+    font-size: 35px;
+  }
+
+  .city {
+    font-size: 30px;
+  }
+
+  .other-details {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 220px) {
+  .search input {
+    width: 120px;
+    font-size: 12px;
+  }
+
+  .search img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 200px) {
+  .weather-icon {
+    width: 80px;
+  }
+
+  .temp {
+    font-size: 30px;
+  }
+
+  .city {
+    font-size: 25px;
+  }
+
+  .col img {
+    width: 30px;
+  }
+
+  .col p {
+    font-size: 12px;
+  }
+}
